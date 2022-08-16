@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnLinear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fragment1"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:id="@+id/btnConstraint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fragment2"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:id="@+id/btnRelativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fragment3"
+            android:layout_margin="2dp" />
+    </LinearLayout>
+
+
+   <!-- we can use FragmentContainerView or FrameLayout to replace dynamically with fragment
+    we can even use fragment to load static fragments-->
+   <!-- <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2" />-->
+
+    <FrameLayout
+        android:id="@+id/fragment_container_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2" />
+
+</LinearLayout>
