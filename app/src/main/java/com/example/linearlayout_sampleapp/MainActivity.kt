@@ -23,9 +23,6 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.btnConstraint).setOnClickListener {
             setFragment(constraintLayoutFragment)
         }
-        findViewById<Button>(R.id.btnRelativeLayout).setOnClickListener {
-
-        }
     }
 
     private fun setFragment(fragment: Fragment) {

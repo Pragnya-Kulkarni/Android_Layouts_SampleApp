@@ -8,8 +8,6 @@ import android.view.ViewGroup
 
 
 class ConstraintLayoutFragment : Fragment() {
-
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
